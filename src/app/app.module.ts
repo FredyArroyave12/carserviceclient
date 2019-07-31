@@ -7,20 +7,20 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CarListComponent } from './car-list/car-list.component';
 
-import { MatButtonModule, MatCardModule, MatInputModule, MatListModule, MatToolbarModule } from '@angular/material';
+import { MatIconModule, MatCardModule, MatButtonModule, MatMenuModule, MatInputModule, MatListModule, MatToolbarModule, MatSelectModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarEditComponent } from './car-edit/car-edit.component';
 import { FormsModule } from '@angular/forms';
-import { AddOwnerComponent } from './add-owner/add-owner.component';
-import { OwnerListComponent } from './owner-list/owner-list.component';
+import { addOwnerComponent } from './add-owner/add-owner.component';
+import { ownerlistcomponent } from './owner-list/owner-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CarListComponent,
     CarEditComponent,
-    AddOwnerComponent,
-    OwnerListComponent
+    addOwnerComponent,
+    ownerlistcomponent
   ],
   imports: [
     BrowserModule,
@@ -28,9 +28,13 @@ import { OwnerListComponent } from './owner-list/owner-list.component';
     HttpClientModule,
     BrowserAnimationsModule,
     MatButtonModule,
+    MatIconModule,
+    MatButtonModule,
     MatCardModule,
     MatInputModule,
+    MatMenuModule,
     MatListModule,
+    MatSelectModule,
     MatToolbarModule,
     FormsModule
   ],

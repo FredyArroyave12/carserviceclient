@@ -16,10 +16,10 @@
       </mat-card-content>
       <mat-card-actions>
         <button mat-raised-button color="primary" type="submit"
-                [disabled]="!ownerForm.form.valid">Save</button>
+                [disabled]="!ownerForm.form.valid">Save owner</button>
         <button mat-raised-button color="secondary" (click)="remove(owner.href)"
                 *ngIf="owner.href" type="button">Delete</button>
-        <a mat-button routerLink="/propietarios-list">Cancel</a>
+        <a mat-button routerLink="/owner-list">Back</a>
       </mat-card-actions>
       <mat-card-footer>
       </mat-card-footer>

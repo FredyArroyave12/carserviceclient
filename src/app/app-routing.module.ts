@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { CarListComponent } from './car-list/car-list.component';
 import { CarEditComponent } from './car-edit/car-edit.component';
 import { addOwnerComponent } from './add-owner/add-owner.component';
-import { PropietariosListComponent } from './owner-list/owner-list.component';
+import { ownerlistcomponent } from './owner-list/owner-list.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/car-list', pathMatch: 'full' },
@@ -20,16 +20,16 @@ const routes: Routes = [
     component: CarEditComponent
   },
   {
-    path: 'add-pro',
-    component : AddPropietarioComponent
+    path: 'add-owner',
+    component : addOwnerComponent
   },
   {
-    path: 'pro-edit/:dni',
-    component : AddPropietarioComponent
+    path: 'owner-edit/:dni',
+    component : addOwnerComponent
   },
   {
-    path : 'propietarios-list',
-    component : PropietariosListComponent
+    path : 'owner-list',
+    component : ownerlistcomponent
   }
 ];
 
