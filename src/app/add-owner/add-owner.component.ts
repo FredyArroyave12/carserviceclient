@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { NgForm } from '@angular/forms';
-import { PropietarioService } from '../shared/owner/owner.service';
+import { ownerService } from '../shared/owner/owner.service';
 import { CarService } from '../shared/car/car.service';
 
 @Component({
@@ -18,7 +18,7 @@ export class addOwnerComponent implements OnInit {
 
   constructor(private route: ActivatedRoute,
     private router: Router,
-    private ownerservice: ownerservice,
+    private ownerservice: ownerService,
     private carService: CarService) { }
 
   ngOnInit() {

@@ -12,13 +12,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarEditComponent } from './car-edit/car-edit.component';
 import { FormsModule } from '@angular/forms';
 import { AddOwnerComponent } from './add-owner/add-owner.component';
+import { OwnerListComponent } from './owner-list/owner-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CarListComponent,
     CarEditComponent,
-    AddOwnerComponent
+    AddOwnerComponent,
+    OwnerListComponent
   ],
   imports: [
     BrowserModule,
