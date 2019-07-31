@@ -25,3 +25,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+Explicacion: 
+Para la solución de los diferentes puntos, se tuvo que crear varios componentes y servicios.
+Primero se crearon los componentes para agregar el owner (add-owner)con un dni, nombre y profesión, tambien los componentes para listar los owners(owner-list) y se creó el respectivo servicio para trabajar sobre los owners (owner.service) y en el repectivo componente de los carros se agrego el codigo para poder asignar un owner a un carro(car-edit).
